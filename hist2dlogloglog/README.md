@@ -36,4 +36,4 @@ y = rPareto(10000,1000,0.1)
 hist2dlogloglog(x,y,log="xyz",xlab="X values" ,ylab="Y values", main="hist2dlogloglog example")
 ```
 
-![hist2dlogloglog example showing Pareto distribution of X and Y](hist2dlogloglog_paretoex.png)
+![hist2dlogloglog example showing Pareto distribution of X and Y](hist2dlogloglog_example1.png)
