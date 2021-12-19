@@ -1,4 +1,4 @@
-# hist2dlogloglog
+# R hist2dlogloglog
 
 2-dimensional histogram with support logarithmic axes. Best suited for large, heavily skewed datasets.
 
