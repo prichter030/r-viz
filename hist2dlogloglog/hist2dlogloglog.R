@@ -26,7 +26,7 @@ hist2dlogloglog <- function(datax, datay,nbins=100,col=rf(32),log="",...){
   
   rf <- colorRampPalette(rev(brewer.pal(11,'Spectral')))
   
-  #check if logging X axis is desired
+  #log X and Y data if desired
   
   if(logx){
     datax = log(datax)
@@ -38,18 +38,19 @@ hist2dlogloglog <- function(datax, datay,nbins=100,col=rf(32),log="",...){
   
   h <- hist2d(datax, datay,nbins=nbins,show=F)
   
+  #if logging Z axis (color-coded) is desired, log the calculcated counts for each histogram bin
+ 
   if(logz){
     h$counts = log(h$counts+1)
   }
+  
+  # remove empty fields (we had to set h$counts +1 for logarithm earlier)
   h$counts[h$counts == 0] <- NA
   
-  #h_log_counts <- log(h$counts+1)
-  #h_log_counts[h_log_counts == 0]<- NA
-  
+  # plot hist2d
   image(x=h$x, y= h$y, z=h$counts,col=col,axes=F,...)
-  print(h$x)
-  print(log_breaks(base=10)(exp(h$x)))
   
+  # calculcate axes ticks, check if log is desired or not.
   if(logx){
     xticks = log(log_breaks(base=10)(exp(h$x)))
     xlabels = log_breaks(base=10)(exp(h$x))  
@@ -67,7 +68,8 @@ hist2dlogloglog <- function(datax, datay,nbins=100,col=rf(32),log="",...){
   }
   
   
-  #allow overplotting so that all labels get placed
+  # allow overplotting so that all labels get placed.
+  # this doesn't always work.
   par(xpd=T)
   axis(1,at=xticks,labels=xlabels)
   axis(2,at=yticks,labels=ylabels)
