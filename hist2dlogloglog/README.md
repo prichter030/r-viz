@@ -1,7 +1,8 @@
 # R hist2dlogloglog
 
-2-dimensional histogram with support logarithmic axes. Best suited for large, heavily skewed datasets.
+2-dimensional histogram with support logarithmic axes (X,Y, and color-coded Z axis).
 
+Allows for visualization of heavily skewed data.
 
 ## Installation / Dependencies
 
