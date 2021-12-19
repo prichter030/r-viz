@@ -15,7 +15,7 @@ install.packages("scales") # required for log-scale axis computations.
 ```
 ### Load hist2dplus
 ```r
-source("hist2dplus.R")
+source("hist2dlogloglog.R")
 
 ```
 
@@ -25,6 +25,8 @@ source("hist2dplus.R")
 # generarte heavily skewed data, e.g., from a Pareto distribution. 
 
 library(Pareto)
+
+#let's assume our datapoints have two properties that we want to visualize (x and y).
 
 x = rPareto(10000,1000,0.1)
 y = rPareto(10000,1000,0.1)
