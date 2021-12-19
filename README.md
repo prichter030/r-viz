@@ -1,2 +1,2 @@
 # r-viz
-R visualizations
+R visualizations.
