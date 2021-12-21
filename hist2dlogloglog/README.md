@@ -8,7 +8,7 @@ Allows for visualization of heavily skewed data.
 
 ### Dependencies
 ```r
-install.packages("gplots") # contains original hist2d, which hist2dplus is based on.
+install.packages("gplots") # contains original hist2d, which hist2dlogloglog is based on.
 install.packages("RColorBrewer") # required for beautiful colors.
 install.packages("fields") # required to plot z-axis legend.
 install.packages("scales") # required for log-scale axis computations.
