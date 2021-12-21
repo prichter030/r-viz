@@ -13,7 +13,7 @@ install.packages("RColorBrewer") # required for beautiful colors.
 install.packages("fields") # required to plot z-axis legend.
 install.packages("scales") # required for log-scale axis computations.
 ```
-### Load hist2dplus
+### Load hist2dlogloglog
 ```r
 source("hist2dlogloglog.R")
 
