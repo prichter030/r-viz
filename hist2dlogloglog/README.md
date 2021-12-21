@@ -28,15 +28,15 @@ library(Pareto)
 
 #let's assume our datapoints have two properties that we want to visualize (x and y).
 
-x = rPareto(10000,1000,0.1)
-y = rPareto(10000,1000,0.1)
+x = rPareto(1000000,1000,0.1)
+y = rPareto(1000000,1000,0.1)
 
-# summary(x)
-#      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-# 1.002e+03 1.816e+04 1.021e+06 3.674e+34 8.414e+08 2.958e+38 
+#summary(x)
+#     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+#1.000e+03 1.774e+04 1.010e+06 9.033e+53 1.035e+09 8.027e+59
 # (yep, that data is heavily skewed)
 
 hist2dlogloglog(x,y,log="xyz",xlab="X values" ,ylab="Y values", main="hist2dlogloglog example")
 ```
 
-![hist2dlogloglog example showing Pareto distribution of X and Y](hist2dlogloglog_example1.png)
+![hist2dlogloglog example showing Pareto distribution of X and Y](hist2dlogloglog_example2.png)
