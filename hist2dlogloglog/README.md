@@ -22,7 +22,7 @@ source("hist2dlogloglog.R")
 ## Example 1: both x- and y-axis log scaled, counts (z-axis) log scaled
 
 ```r
-# generarte heavily skewed data, e.g., from a Pareto distribution. 
+# generate heavily skewed data, e.g., from a Pareto distribution. 
 
 library(Pareto)
 
