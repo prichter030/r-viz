@@ -19,7 +19,7 @@ source("hist2dlogloglog.R")
 
 ```
 
-### Example
+## Example
 
 ```r
 # generarte heavily skewed data, e.g., from a Pareto distribution. 
